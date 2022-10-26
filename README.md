@@ -67,11 +67,9 @@ gluPerspective(30, 1, -1000, 1000);
 #### `input.c`
 Have to say that use C to read file is quite an annoying thing.<br>
 function `reNormal()` is to calculate the normal vectors by myself.
-Math:
-$$
-(a_1, b_1, c_1) \times (a_2, b_2, c_2) = \\
-(b_1 c_2 - b_2 c_1)\vec i + (c_1 a_2 - c_2 a_1)\vec j + (a_1 b_2 - a_2 b_1)\vec k
-$$
+Math:<br>
+$(a_1, b_1, c_1)\times (a_2, b_2, c_2)$<br>
+$=(b_1 c_2 - b_2 c_1)\vec i + (c_1 a_2 - c_2 a_1)\vec j + (a_1 b_2 - a_2 b_1)\vec k$<br>
 A face include 3 vectors, each vector can calculate a normal of face like above.
 One vector appear in multiple faces, sum all the normal vectors.
 Finally caculate the length, and divide, make sure $x^2 + y^2 + z^2 = 1$
